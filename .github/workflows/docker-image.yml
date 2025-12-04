@@ -1,4 +1,4 @@
-name: Python Flask Docker build
+name: Python Flask Docker build.
 
 on:
   push:
