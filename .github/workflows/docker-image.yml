@@ -25,7 +25,7 @@ jobs:
       run: echo "${{secrets.docker_password}}" | docker login -u "${{ secrets.docker_username }}" --password-stdin
 
     - name: Push Docker Image
-      run: docker push santhunaidu_docker_docker:latest
+      run: docker push santhunaidu_docker:latest
 
     - name: Log out from Docker Hub  
       run: docker logout
