@@ -28,6 +28,10 @@ jobs:
     - name: login into docker hub
       run: echo "${{secrets.docker_password}}" | docker login -u "${{ secrets.docker_username }}" --password-stdin
 
+    - name: Verify Login
+      run: docker info
+
+
     - name: Push Docker Image
       run: docker push santhunaidu/santhunaidu_docker:latest
 
