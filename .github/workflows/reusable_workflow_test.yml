@@ -1,0 +1,8 @@
+name : reusable workflow test
+on : 
+ push:
+  branches: [main]
+jobs:
+ call_reusable_from_another_repo:
+  uses: Santhosh-yenumula/Reusable-workflow-githublearn/.github/workflows/reusableworkflow.yml@main
+ 
