@@ -23,7 +23,7 @@ jobs:
       run: docker images
 
     - name: Tag the image
-      run: docker tag santhunaidu_docker:latest santhunaidu/santhunaidu_docker:latest
+      run: docker tag santhunaidu_docker:latest santhunaidu4128/santhunaidu_docker:latest
     
     - name: login into docker hub
       run: echo "${{secrets.docker_password}}" | docker login -u "${{ secrets.docker_username }}" --password-stdin
